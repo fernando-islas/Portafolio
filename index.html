@@ -357,16 +357,19 @@ var windowWidth = $(window).width();
 window.onresize = resize;
 
 function resize(){
-  if(navigator.userAgent.match(/Android/i)) return;
+  if(navigator.userAgent.match(/Android/i)){
+	   if($(window).width()!=windowWidth){
+
+		 /* alert("Bingo");*/
+			  windowWidth = $(window).width();
+	   }
+	   else return;
+  }
 
   window.parent.location = window.parent.location.href;
 
 
-   if($(window).width()!=windowWidth){
-
-     /* alert("Bingo");*/
-          windowWidth = $(window).width();
-   }
+  
 
 }
 </script>
