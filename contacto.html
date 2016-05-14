@@ -254,7 +254,30 @@ a:focus {
 
 </style>
 <link href="responsive/responsive.css" rel="stylesheet" />
+<script type="text/javascript">
+var windowWidth = $(window).width();
+
+window.onresize = resize;
+
+function resize(){
+  if(navigator.userAgent.match(/Android/i)){
+	  alert("a");
+	   if($(window).width()!=windowWidth){
+
+		  alert("Bingo");
+			  windowWidth = $(window).width();
+	   }
+	   else return;
+  }
+
+  window.parent.location = window.parent.location.href;
+}
+</script>
+
+
 </head>
+<body>
+<!--
 <body onresize="window.parent.location = window.parent.location.href;">
 <!--
 "window.location.reload()">
@@ -273,7 +296,7 @@ window.location.href = location.href + "?" + Date.parse(new Date());
   <a class="pure-menu-link" href="index.html"><i class="fa fa-home fa-fw"></i>&nbsp; Inicio  </a>
   </li>
        
-            <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover "><a href="" class="pure-menu-link "><i class="fa fa-briefcase fa-fw"></i>&nbsp; Portafolio</a>
+            <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover "><a class="pure-menu-link "><i class="fa fa-briefcase fa-fw"></i>&nbsp; Portafolio</a>
             	<ul class="pure-menu-children">
                 	<li class="pure-menu-item"><a href="diseno.html" class="pure-menu-link">
                     	<i class="fa fa-pencil-square-o fa-fw"></i>&nbsp; Diseño Gráfico</a></li>
