@@ -351,11 +351,44 @@
 }
 
 	</style>
-    
+<script type="text/javascript">
+var windowWidth = $(window).width();
+
+window.onresize = resize;
+
+function resize(){
+  if(navigator.userAgent.match(/Android/i)){
+	  alert("a");
+	   if($(window).width()!=windowWidth){
+
+		  alert("Bingo");
+			  windowWidth = $(window).width();
+	   }
+	   else return;
+  }
+
+  window.parent.location = window.parent.location.href;
+
+
+  
+
+}
+</script>
+
 </head>
+
 <body>
 <!--
-<body onresize="window.parent.location = window.parent.location.href;">
+<body onresize="window.location = window.location.href;">
+
+<script>
+function redirect(uri) {
+  if(navigator.userAgent.match(/Android/i)) 
+    ;      
+  else
+    window.location.replace(uri);
+}
+</script>
 <!--
 "window.location.reload()">
 -->
