@@ -355,12 +355,12 @@
 
 <script type="text/javascript">
 var windowWidth = $(window).width();
-var initial = true;
+//var initial = true;
 window.onresize = resize;
 
 function resize(){
   if(navigator.userAgent.match(/Android/i)){
-	  if(!initial){
+	  //if(!initial){
 		  alert("a");
 		   if($(window).width()!=windowWidth){
 
@@ -368,11 +368,11 @@ function resize(){
 				  windowWidth = $(window).width();
 		   }
 		   else return;
-	  }
-	  else{ 
+	  //}
+	  //else{ 
         // don't do your stuff here
-	  } 
-	  initial = false;
+	  //} 
+	  //initial = false;
    }
    else{
        window.parent.location = window.parent.location.href;
