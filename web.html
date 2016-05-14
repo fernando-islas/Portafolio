@@ -187,21 +187,28 @@
 
 <script type="text/javascript">
 var windowWidth = $(window).width();
-
+//var initial = true;
 window.onresize = resize;
 
 function resize(){
   if(navigator.userAgent.match(/Android/i)){
-	  alert("a");
-	   if($(window).width()!=windowWidth){
+	  //if(!initial){
+		  //alert("a");
+		   if($(window).width()!=windowWidth){
 
-		  alert("Bingo");
-			  windowWidth = $(window).width();
-	   }
-	   else return;
-  }
-
-  window.parent.location = window.parent.location.href;
+			  //alert("Bingo");
+				  windowWidth = $(window).width();
+		   }
+		   else return;
+	  //}
+	  //else{ 
+        // don't do your stuff here
+	  //} 
+	  //initial = false;
+   }
+   else{
+       window.parent.location = window.parent.location.href;
+	}
 }
 </script>
 
