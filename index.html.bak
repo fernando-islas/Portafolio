@@ -529,7 +529,7 @@ window.location.href = location.href + "?" + Date.parse(new Date());
 		var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 0.1, offset:-5, triggerHook:0.25, loglevel: 3})
 											.setTween(tween)
 											.setPin("#animate1")
-											.addIndicators() // add indicators (requires plugin)
+											//.addIndicators() // add indicators (requires plugin)
 											.addTo(controller);
 /*
 		var params = {css: {
