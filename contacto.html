@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A layout example that shows off a responsive product landing page.">
+
+    <title>Portafolio &ndash; Fernando Islas &ndash; Contacto</title>
+
+<!--[if lte IE 8]>
+		<link rel="icon" sizes="any" mask href="https://s.yimg.com/os/mit/media/p/common/images/favicon_new-7483e38.svg">
+<meta name="theme-color" content="#400090">
+    <link rel="shortcut icon" href="https://s.yimg.com/rz/l/favicon.ico" />
+    <![endif]-->
+	<!--[if gt IE 8]><!-->
+		<link rel="icon" type="image/png" href="portafolio.png">
+    <!--<![endif]-->   
+    
+
+
+<link rel="stylesheet" href="pure-release-0.6.0/pure-min.css">
+
+
+
+<!--[if lte IE 8]>
+  
+    <link rel="stylesheet" href="pure-release-0.6.0/grids-responsive-old-ie-min.css">
+  
+<![endif]-->
+<!--[if gt IE 8]><!-->
+  
+
+ 
+    <link rel="stylesheet" href="pure-release-0.6.0/grids-responsive-min.css">
+  
+    
+  
+<!--<![endif]-->
+
+<!--
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+-->
+
+<link rel="stylesheet" href="bootstrapcdn_font-awesome_4.0.3_css/font-awesome.css">
+
+
+
+  
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/layouts/marketing-old-ie_contacto.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="css/layouts/marketing_contacto.css">
+    <!--<![endif]-->
+  
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/layouts/pricing-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="css/layouts/pricing.css">
+    <!--<![endif]-->
+    
+
+ <!--  
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+  -->  
+    
+  
+    
+    
+    
+    
+    	<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+        <meta name="description" content="Responsive Image Gallery with jQuery" />
+        <meta name="keywords" content="jquery, carousel, image gallery, slider, responsive, flexible, fluid, resize, css3" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/elastislide.css" />
+        <!--
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css' />
+        -->
+		<noscript>
+			<style>
+				.es-carousel ul{
+					display:block;
+				}
+			</style>
+		</noscript>
+		<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">	
+			<div class="rg-image-wrapper">
+				{{if itemsCount > 1}}
+					<div class="rg-image-nav">
+						<a href="#" class="rg-image-nav-prev">Previous Image</a>
+						<a href="#" class="rg-image-nav-next">Next Image</a>
+					</div>
+				{{/if}}
+				<div class="rg-image"></div>
+				<div class="rg-loading"></div>
+				<div class="rg-caption-wrapper">
+					<div class="rg-caption" style="display:none;">
+						<p></p>
+					</div>
+				</div>
+			</div>
+		</script>
+        
+        
+       <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
+        <!--<link rel="stylesheet" href="bootstrap/3.3.5/css/bootstrap.min.css">-->
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+         <!--<script src="jquery/1.11.3/jquery.min.js"></script>-->
+        <!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
+         <!--<script src="bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
+	<style>
+      /*
+      .test + .tooltip > .tooltip-inner {
+          background-color: #8AC007; 
+          color: #FFFFFF; 
+          border: 1px solid green; 
+          
+      }
+      
+      .test + .tooltip.top > .tooltip-arrow {
+          border-top: 5px solid green;
+      }
+      
+      .test + .tooltip.bottom > .tooltip-arrow {
+          border-bottom: 5px solid blue;
+      }
+      
+      .test + .tooltip.left > .tooltip-arrow {
+          border-left: 5px solid red;
+      }
+      
+      .test + .tooltip.right > .tooltip-arrow {
+          border-right: 5px solid black;
+      }*/
+  </style>
+
+
+
+<style>
+a{
+	color:#00aff2;
+	text-decoration:none;
+	background:none;
+	border:none;
+}
+a:hover,
+a:focus {
+	color:#00c3ff;
+	background:#e7e7e7;
+	
+	border:thin;
+	border-color:#dbdbdb;
+	border-radius:2px;
+	border-style:solid;
+}
+
+.revista{
+	background: #686868;
+	/*border-radius: 9px;*/
+	padding:1em;
+	border:thin;
+	border-style:solid;
+/*		border-width:thick;*/
+}
+.video {
+   position: relative;
+   padding-bottom: 75%;
+   overflow: hidden;
+}
+
+.video iframe
+ {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.whatsapp
+{
+	color:#47c62f;
+}
+
+.hangouts
+{
+	color:#149959;
+}
+
+.facebook
+{
+	color:#45619c;
+}
+
+.twitter
+{
+	color:#00acee;
+}
+
+.google-plus
+{
+	color:#dd4b39;
+}
+
+.behance
+{
+	color:#009dfb;
+}
+
+.deviantart
+{
+	color:#05cc47;
+}
+
+.linkedin
+{
+	color:#1d87bd;
+}
+
+.flickr
+{
+	color:black;
+}
+
+.youtube
+{
+	color:#d12c2c;
+}
+
+.pinterest
+{
+	color:#bd1e23;
+}
+
+._500px
+{
+	color:black;
+}
+
+</style>
+<link href="responsive/responsive.css" rel="stylesheet" />
+</head>
+<body onresize="window.parent.location = window.parent.location.href;">
+<!--
+"window.location.reload()">
+-->
+<!--
+window.location.href = location.href + "?" + Date.parse(new Date());
+-->
+
+<div class="header">
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+        
+
+        <ul class="pure-menu-list">
+            <!--<li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Inicio</a></li>-->
+  <li class="pure-menu-item">
+  <a class="pure-menu-link" href="index.html"><i class="fa fa-home fa-fw"></i>&nbsp; Inicio  </a>
+  </li>
+       
+            <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover "><a href="" class="pure-menu-link "><i class="fa fa-briefcase fa-fw"></i>&nbsp; Portafolio</a>
+            	<ul class="pure-menu-children">
+                	<li class="pure-menu-item"><a href="diseno.html" class="pure-menu-link">
+                    	<i class="fa fa-pencil-square-o fa-fw"></i>&nbsp; Diseño Gráfico</a></li>
+                    <li class="pure-menu-item"><a href="fotografia.html" class="pure-menu-link">
+                    	<i class="fa fa-camera-retro fa-fw"></i>&nbsp; Fotografía</a></li>
+                    <li class="pure-menu-item"><a href="web.html" class="pure-menu-link">
+                    	<i class="fa fa-th-large fa-fw"></i>&nbsp; Diseño Web</a></li>
+                    <li class="pure-menu-item"><a href="modelado.html" class="pure-menu-link">
+                    	<i class="fa fa-cubes fa-fw"></i>&nbsp; Modelado y Animación</a></li>
+                    <li class="pure-menu-item"><a href="video.html" class="pure-menu-link">
+                    	<i class="fa fa-video-camera fa-fw"></i>&nbsp; Video y Post-producción</a></li>
+                    <li class="pure-menu-item"><a href="juegos.html" class="pure-menu-link">
+                    	<i class="fa fa-gamepad fa-fw"></i></i>&nbsp; Desarrollo de video juegos</a></li>              
+                        
+                    <li class="pure-menu-item pure-menu-vertical pure-menu-separatorv"></li>
+                    
+                    <li class="pure-menu-item"><a href="galeria.html" class="pure-menu-link">
+                    	<i class="fa fa-desktop fa-fw"></i>&nbsp; Galería</a></li>
+
+
+				 </ul>
+            </li>
+<!--
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Galería</a></li>
+-->
+            <li class="pure-menu-item"><a href="contacto.html" class="pure-menu-link"><i class="fa fa-comments-o fa-fw"></i>&nbsp; Contacto</a></li>
+        </ul>
+
+    </div>
+</div>
+
+
+<div class="content-wrapper">
+
+	<div class="l-content ">
+        <h2 class="content-head">Contacto  </h2>
+        <div class=" pure-g">
+        <div class="l-box pure-u-1 pure-u-md-1-1 pure-u-lg-1-1">
+            <p><span class='medium'></span>
+            </p><br>
+            </div>
+        </div>
+    </div>
+
+    <div class="l-content fondo">
+        
+        <div class=" pure-g">
+        
+            <div class="l-box pure-u-1 pure-u-md-3-4 pure-u-lg-1-2">
+                <br>
+                <div class="video revista">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.175306716442!2d-99.17079003439336!3d19.36156051172582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x202ea0aa28ec5774!2sBBVA+Bancomer!5e0!3m2!1ses-419!2smx!4v1439191006597" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <br>
+            </div>
+            
+            <div class="l-box pure-u-1 pure-u-md-1-4 pure-u-lg-1-2">
+                <h3 class="content-subhead">
+                   Ubicación
+                </h3>
+                <p><i class="fa fa-map-signs"></i><br>
+                    Calle: Av. Universidad #1200,<br>
+                    Delegación: Benito Juárez, <br>
+                    Colonia: Xoco, <br>
+                    C.P.: 03330 <br>
+                    Ciudad de México, D.F. <br>
+                    <br>
+                    <i class="fa fa-phone-square fa-fw"></i> Teléfono: 56213877<br>
+                    <i class="fa fa-mobile fa-fw"></i> Celular: 55 33411418 &nbsp; 
+    
+    <!--
+    <a href="#" title="WhatsApp" class="test" data-toggle="tooltip" data-placement="top"><i class="fa fa-whatsapp fa-fw whatsapp"></a>
+    <a href="#" title="Hangouts" class="test" data-toggle="tooltip" data-placement="top"><i class="fa fa-quote-right hangouts"></i></a>-->
+    
+                    <a href="https://www.whatsapp.com/?l=es" target="_blank"> <abbr title="WhatsApp"><i class="fa fa-whatsapp fa-fw whatsapp"></i></abbr></a> 
+                     &nbsp;
+                    <a href="https://plus.google.com/hangouts" target="_blank"><abbr title="Hangouts"><i class="fa fa-quote-right hangouts"></i></abbr></a>
+                
+                    <br>
+                    <i class="fa fa-envelope-square fa-fw"></i>&nbsp; 
+                    Correo: <a href="mailto:fernando.islas@bbva.com">fernando.islas@bbva.com</a>
+                </p>
+            </div>
+       	</div>
+    
+	                
+         <!--<script>
+		$(document).ready(function(){
+			$('[data-toggle="tooltip"]').tooltip();   
+		});
+		</script>       -->
+                  
+                  
+ 
+
+        <h2 class="content-head">Redes Sociales</h2>
+
+        <div class="pure-g">
+        	<div class="l-box pure-u-1 pure-u-sm-1-3 pure-u-md-1-4 pure-u-lg-1-5 pure-u-xl-1-6">
+            	</p>
+                    <i class="fa fa-linkedin-square fa-fw linkedin"></i>&nbsp; LinkedIn<br>
+                </p>
+            </div>
+            <div class="l-box pure-u-1 pure-u-sm-1-3 pure-u-md-1-4 pure-u-lg-1-5 pure-u-xl-1-6">
+                <p>
+                    <i class="fa fa-facebook-square fa-fw facebook"></i></i>&nbsp; Facebook<br>
+                </p>
+            </div>
+            <div class="l-box pure-u-1 pure-u-sm-1-3 pure-u-md-1-4 pure-u-lg-1-5 pure-u-xl-1-6">
+            	<p>
+                     <a href="https://plus.google.com/u/0/108348298364126431284/about" target="_blank">
+                     <i class="fa fa-google-plus-square fa-fw google-plus"></i>&nbsp;Google-plus</a><br>
+                </p>
+            </div>
+            <div class="l-box pure-u-1 pure-u-sm-1-3 pure-u-md-1-4 pure-u-lg-1-5 pure-u-xl-1-6">
+            	<p>
+                    <i class="fa fa-twitter-square fa-fw twitter"></i>&nbsp; Twitter<br>
+                </p>
+            </div>
+            <div class="l-box pure-u-1 pure-u-sm-1-3 pure-u-md-1-4 pure-u-lg-1-5 pure-u-xl-1-6">
+            	<p>
+                    <i class="fa fa-behance-square fa-fw behance"></i>&nbsp; Behance<br>
+                </p>
+            </div>
+            <div class="l-box pure-u-1 pure-u-sm-1-3 pure-u-md-1-4 pure-u-lg-1-5 pure-u-xl-1-6">
+            	</p>
+                    <i class="fa fa-deviantart fa-fw deviantart"></i>&nbsp; DeviantArt<br>
+                </p>
+            </div>
+            <div class="l-box pure-u-1 pure-u-sm-1-3 pure-u-md-1-4 pure-u-lg-1-5 pure-u-xl-1-6">
+            	</p>
+                    <i class="fa fa-youtube-play fa-fw youtube"></i>&nbsp; YouTube<br>
+                </p>
+            </div> 
+            <div class="l-box pure-u-1 pure-u-sm-1-3 pure-u-md-1-4 pure-u-lg-1-5 pure-u-xl-1-6">
+            	</p>
+                    <i class="fa fa-flickr fa-fw flickr"></i>&nbsp; Flickr<br>
+                </p>
+            </div>
+            <div class="l-box pure-u-1 pure-u-sm-1-3 pure-u-md-1-4 pure-u-lg-1-5 pure-u-xl-1-6">
+            	</p>
+                    <i class="fa fa-pinterest-square fa-fw pinterest"></i>&nbsp; Pinterest<br>
+                </p>
+            </div>
+            <div class="l-box pure-u-1 pure-u-sm-1-3 pure-u-md-1-4 pure-u-lg-1-5 pure-u-xl-1-6">
+            	</p>
+                    <i class="fa fa-500px fa-fw _500px"></i>&nbsp; 500px<br>
+                </p>
+            </div>
+            
+            
+
+                
+      		</div>
+			<br>
+        </div>
+    
+
+      
+
+	<div class="footer l-box is-center">
+        <p class="copyright">Creado por
+        	<em>Fernando Islas Garcia.</em>
+        </p>
+        <p class="copyright"><em>
+        	<i class="fa fa-copyright"></i> 2015</em>
+        </p>
+        
+        <i class="fa fa-chrome fa-fw"></i> Chrome 31&nbsp;&nbsp;&nbsp;
+        <i class="fa fa-firefox fa-fw"></i> FireFox 38&nbsp;&nbsp;&nbsp;
+        <i class="fa fa-internet-explorer fa-fw"></i> Internet Explorer 8<br>
+        <!--opera 30 y safari 7.1-->
+        
+        <i class="fa fa-mobile"></i>
+        <i class="fa fa-desktop"></i>
+        <i class="fa fa-tablet"></i>&nbsp;&nbsp;&nbsp; Diseño Responsivo<br>
+    </div>
+
+</div>
+
+
+
+
+
+
+</body>
+</html>

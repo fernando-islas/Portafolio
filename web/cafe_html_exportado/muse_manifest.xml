@@ -1,0 +1,56 @@
+<manifest alg="2" build="328" opt="true" iceEnabled="true" exportTarget="other" resolutions="1x" timestamp="1408810283449">
+  <folder name="css">
+    <file name="site_global.css" crc="3880213178"/>
+    <file name="master_index.css" crc="535632759" ref="index"/>
+    <file name="gallery.css" crc="173004981" ref="gallery"/>
+    <file name="index.css" crc="4055861449" ref="index"/>
+    <file name="menu.css" crc="4230825887" ref="menu"/>
+    <file name="contact.css" crc="4082884203" ref="contact"/>
+    <file name="master_interior.css" crc="190352682" ref="contact:menu:gallery"/>
+    <file name="iefonts_contact.css" crc="4025939930" ref="contact"/>
+    <file name="iefonts_menu.css" crc="3783148937" ref="menu"/>
+    <file name="iefonts_index.css" crc="5521459" ref="index"/>
+  </folder>
+  <folder name="assets">
+    <file name="katies-cafe-building-v3.mulib" crc="4089862609" mt="1403107046000"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="3850798583" ref="index:menu:gallery:contact"/>
+    <file name="museutils.js" crc="212726984" ref="index:menu:gallery:contact"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="3953916557" ref="index:menu"/>
+    <file name="jquery.musemenu.js" crc="440295907" ref="index:menu:gallery:contact"/>
+    <file name="jquery.watch.js" crc="4125239756" ref="index:menu:gallery:contact"/>
+    <file name="html5shiv.js" crc="4241844378" ref="index:menu:gallery:contact"/>
+    <file name="jquery.scrolleffects.js" crc="519931148" ref="index:menu"/>
+    <file name="webpro.js" crc="114405901" ref="contact"/>
+  </folder>
+  <folder name="images">
+    <file name="img-dinner.jpg" crc="3887406495" ref="index:menu"/>
+    <file name="logo-landing.png" crc="3765472626" ref="index"/>
+    <file name="banner.png" crc="177214426" ref="index:menu:gallery:contact"/>
+    <file name="img-baking-crop-u863.jpg" crc="4010622816" ref="index"/>
+    <file name="img-baking-crop-u281.jpg" crc="4010622816" ref="index"/>
+    <file name="img-cancer-mug.jpg" crc="4021347632" ref="index"/>
+    <file name="img-salad-crop-u878.jpg" crc="105435533" ref="index"/>
+    <file name="img-salad-crop-u290.jpg" crc="105435533" ref="index"/>
+    <file name="img-cupcakes.jpg" crc="486663859" ref="index"/>
+    <file name="u868-4.png" crc="3967707729" ref="index"/>
+    <file name="u308-4.png" crc="3967707729" ref="index"/>
+    <file name="img-cookie.jpg" crc="56530731" ref="index"/>
+    <file name="img-breakfast.jpg" crc="4110001546" ref="index:menu"/>
+    <file name="ico-arrow-left.png" crc="4046277684" ref="index:menu"/>
+    <file name="logo-interior.png" crc="4070112960" ref="menu:gallery:contact"/>
+    <file name="img-lunch.jpg" crc="338243395" ref="menu"/>
+    <file name="img-dessert.jpg" crc="4153077441" ref="menu"/>
+    <file name="img-drinks.jpg" crc="440022694" ref="menu"/>
+    <file name="u518-17.png" crc="3969245631" ref="contact"/>
+    <file name="u518-17-r.png" crc="4138120183" ref="contact"/>
+    <file name="u518-17-m.png" crc="4138120183" ref="contact"/>
+    <file name="u518-17-fs.png" crc="3908947685" ref="contact"/>
+    <file name="captcha.png" crc="3972111057" ref="contact"/>
+  </folder>
+  <file name="index.html" crc="82348893" mt="1408808808465" redirect="true"/>
+  <file name="menu.html" crc="4071817365" mt="1408809957495" redirect="true"/>
+  <file name="gallery.html" crc="376600877" mt="1408808808475" redirect="true"/>
+  <file name="contact.html" crc="59956500" mt="1408810282367" redirect="true"/>
+</manifest>
